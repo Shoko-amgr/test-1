@@ -1,0 +1,21 @@
+@use "sass:math";
+@use "../global" as *;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: $black;
+    font-size: 16px;
+    font-family: $base-font;
+}
+
+a {
+    transition: opacity 0.3s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@use '../../global' as *;
+@use '../../base' as *;
+
+.inner {
+    max-width: 900px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+
+
+.md-none {
+    @include mq("md") {
+        display: none;
+    }
+}
+
+.md-show {
+    display: none;
+
+    @include mq("md") {
+        display: block;
+    }
+}
